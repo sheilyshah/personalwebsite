@@ -57,11 +57,11 @@ nav.navbar.scrolled {
   background-color:whitesmoke;
 }
 
-nav.navbar .navbar-nav .nav-link.navbar-link {
+.nav-link {
   font-weight: 400;
   color: #121212 !important;
   letter-spacing: 0.8px;
-  padding: 0 25px;
+  padding: 25px;
   font-size: 35px;
   opacity: 0.75;
 }
@@ -212,6 +212,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1;
   margin-bottom: 10px;
   display:block;
+  color: #121212; 
 }
 
 .banner p {
@@ -224,7 +225,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner .wrap {
   font-size: 25px; 
-  color: #282c34; 
+  color: #121212; 
 }
 
 
