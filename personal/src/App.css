@@ -112,7 +112,7 @@ span.navbar-text {
 }
 .navbar-text button {
   font-weight: 700;
-  color: #121212;
+  color: #282c34;
   border: 1px solid #282c34;
   padding: 18px 34px;
   font-size: 18px;
@@ -136,7 +136,7 @@ span.navbar-text {
   transition: 0.3s ease-in-out;
 }
 .navbar-text button:hover {
-  color: #121212;
+  color:#121212;
 }
 .navbar-text button:hover::before {
 	content: "";
