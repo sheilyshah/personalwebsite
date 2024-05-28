@@ -202,30 +202,50 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner .content {
   align-self: flex-start; 
-  padding: 20px; 
+  padding: 100px; 
+}
+
+.banner .image-container img {
+  padding-top: 185px;
+  width: 100%;
+  height: auto;
+  max-width: 500px;
 }
 
 .banner h1 {
-  font-size: 65px;
-  font-weight: 550;
+  font-size: 70px;
+  font-weight: 500;
   letter-spacing: 0.8px;
   line-height: 1;
   margin-bottom: 10px;
   display:block;
-  color: #121212; 
-}
-
-.banner p {
-  color: #B8B8B8;
-  font-size: 40px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-  width: 96%;
+  color: #201209; 
 }
 
 .banner .wrap {
-  font-size: 25px; 
-  color: #121212; 
+  font-size: 30px; 
+  color: #201209; 
+  font-family: OpenSans-Light
+}
+
+/*Resume*/ 
+
+.timeline {
+  display: flex;
+  justify-content: flex-start; 
+  font-size: 1.2em;
+}
+
+.timeline .MuiTimelineItem-root {
+  align-items: flex-start;
+}
+
+.timeline .MuiTimelineContent-root {
+  text-align: left; 
+}
+
+.timeline .MuiTimelineDot-root {
+  margin-left: 0; /* Adjust dot position if necessary */
 }
 
 

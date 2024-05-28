@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import {useState, useEffect} from "react"
+import sheilyPic from "../assets/imgs/sheily-profile-pic.png"
 
 export const Banner = () => { 
     const [loopNum, setLoopNum] = useState(0)
@@ -50,6 +51,11 @@ export const Banner = () => {
                 <h1>{'Sheily Shah'}</h1>
                 <span className="wrap" style={{ visibility: text ? 'visible' : 'hidden' }}>{text || '\u00A0'}</span>
                 </div>
+                </Col>
+                <Col>
+                <div className="image-container">
+                    <img src={sheilyPic} alt="Sheily Shah" className="img-fluid" />
+                    </div>
                 </Col>
             </Row>
         </Container>
