@@ -198,6 +198,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   height: 70vh;
   background-color: #f5f5f5; /* Optional: Add background color */
+  margin-bottom: 150px; /* Adjust as needed */
 }
 
 .banner .content {
@@ -230,24 +231,101 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /*Resume*/ 
 
-.timeline {
-  display: flex;
-  justify-content: flex-start; 
-  font-size: 1.2em;
+/* timeline.module.css */
+.timeline-container {
+  width: 80% !important; /* Adjust the width as needed */
+  padding: 20px !important;
 }
 
-.timeline .MuiTimelineItem-root {
-  align-items: flex-start;
+.timeline-element {
+  font-size: 14px !important; /* Keep font size */
+  border-radius: 25px !important;
+  text-align: left;
 }
 
-.timeline .MuiTimelineContent-root {
-  text-align: left; 
+.timeline-title {
+  font-size: 30px; 
+  color: #201209; 
+  font-family: OpenSans-SemiBold;
+  margin-bottom: 35px; 
+  display: inline-block;
+  width: 82% !important; /* Adjust the width as needed */
+  text-align: left;
 }
 
-.timeline .MuiTimelineDot-root {
-  margin-left: 0; /* Adjust dot position if necessary */
+.timeline-badge {
+  margin-bottom: 10px;
+  text-align: left;
+  display: inline-block;
 }
 
+.timeline-element h3,
+.timeline-element h4,
+.timeline-element h5,
+.timeline-element p {
+  margin: 0 !important; /* Remove default margin */
+  padding-left: 10px; /* Add padding to the left */
+  font-family: OpenSans-Regular !important; /* Keep font family */
+  display: inline-block;
+  text-align: left;
+}
+
+.timeline-element h3 {
+  font-size: 16px !important; /* Increase font size */
+  font-family: OpenSans-SemiBold !important; /* Keep font family */
+}
+
+.timeline-element h4,
+.timeline-element h5 {
+  font-size: 16px !important; /* Keep font size */
+  font-family: OpenSans-Regular !important; /* Keep font family */
+}
+
+.timeline-element h5 {
+  font-size: 15px !important; /* Keep font size */
+  font-family: OpenSans-Light !important; /* Keep font family */
+}
+
+.timeline-element p {
+  font-size: 14px !important; /* Keep font size */
+}
+
+.timeline-element-button {
+  background-color: #201209;
+  color: white;
+  border: 1px solid #121212; /* Added border style */
+  padding: 0.5em 1em;
+  text-align: left;
+  text-decoration: none;
+  font-size: 12px;
+  margin: 8px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  width: auto;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Transition for background, text, and border */
+}
+
+.timeline-element-button:hover {
+  background-color: white;
+  color: #121212;
+  border-color: #121212; /* Change border color on hover */
+}
+
+.timeline-icon {
+  top: 0;
+  background-color: #fff; /* Adjust background color as needed */
+  width: 40px; /* Adjust width and height as needed */
+  height: 40px;
+}
+
+.timeline-icon img {
+  max-width: 100%; /* Ensure the icon fits within its container */
+}
+
+.timeline-content {
+  padding-left: 60px; /* Adjust padding to accommodate the icon */
+}
 
 .App {
   text-align: center;

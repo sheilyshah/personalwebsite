@@ -7,7 +7,7 @@ import sheilyPic from "../assets/imgs/sheily-profile-pic.png"
 export const Banner = () => { 
     const [loopNum, setLoopNum] = useState(0)
     const [isDeleting, setIsDeleting] = useState(false)
-    const toRotate = ["Software Engineer", "Writer", "Dancer"] 
+    const toRotate = ["software engineer", "writer", "dancer"] 
     const [text, setText] = useState(''); 
     const [delta, setDelta] = useState(300 - Math.random() * 50)
     const period = 1500; 
@@ -48,7 +48,7 @@ export const Banner = () => {
             <Row className="align-items-center">
                 <Col xs={12} md = {6} xl = {7}>
                 <div className="content">
-                <h1>{'Sheily Shah'}</h1>
+                <h1>{'sheily shah'}</h1>
                 <span className="wrap" style={{ visibility: text ? 'visible' : 'hidden' }}>{text || '\u00A0'}</span>
                 </div>
                 </Col>

@@ -35,10 +35,10 @@ export const NavBar = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ms-auto">
-            <Nav.Link href="home" className={activeLink === 'home' ? 'active-navbar' : 'navbar'} onClick={() =>  onUpdateActiveLink('home')}>Home</Nav.Link>
-            <Nav.Link href="resume" className={activeLink === 'resume' ? 'active-navbar' : 'navbar'} onClick={() =>  onUpdateActiveLink('projects')}>Resume</Nav.Link>
-            <Nav.Link href="dance" className={activeLink === 'dance' ? 'active-navbar' : 'navbar'} onClick={() =>  onUpdateActiveLink('dance')}>Dance</Nav.Link>
-            <Nav.Link href="writing" className={activeLink === 'writing' ? 'active-navbar' : 'navbar'} onClick={() =>  onUpdateActiveLink('writing')}>Writing</Nav.Link>
+            <Nav.Link href="home" className={activeLink === 'home' ? 'active-navbar' : 'navbar'} onClick={() =>  onUpdateActiveLink('home')}>home</Nav.Link>
+            <Nav.Link href="resume" className={activeLink === 'resume' ? 'active-navbar' : 'navbar'} onClick={() =>  onUpdateActiveLink('resume')}>resume</Nav.Link>
+            <Nav.Link href="dance" className={activeLink === 'dance' ? 'active-navbar' : 'navbar'} onClick={() =>  onUpdateActiveLink('dance')}>dance</Nav.Link>
+            <Nav.Link href="writing" className={activeLink === 'writing' ? 'active-navbar' : 'navbar'} onClick={() =>  onUpdateActiveLink('writing')}>writing</Nav.Link>
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
