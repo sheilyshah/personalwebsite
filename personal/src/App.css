@@ -243,6 +243,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: left;
 }
 
+.timeline-skills {
+  display: inline-block;
+  width: 90% !important; /* Adjust the width as needed */
+  text-align: center;
+  margin-bottom: 35px; 
+}
+
 .timeline-title {
   font-size: 30px; 
   color: #201209; 

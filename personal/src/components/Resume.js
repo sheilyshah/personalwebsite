@@ -7,13 +7,17 @@ import timelineElements from "./timelineElements"
 import { Badge } from '@mui/material';
 import { createTheme } from '@mui/material/styles';
 import Stack from 'react-bootstrap/Stack';
+import { Skills } from "./Skills"
 
 export const Resume = () => { 
           
     return (
-<Container>    
+<Container>  
 <section className="timeline" id="resume"> 
 <h1 className="timeline-title"> {'resume'} </h1>
+<section className="timeline-skills">
+    <Skills />
+</section>
 <VerticalTimeline className='timeline-container'>
     {
     timelineElements.map(element => {

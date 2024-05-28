@@ -9,7 +9,7 @@ let timelineElements = [
     },
     {
         id: 2, 
-        title: "Associate Software Engineer", 
+        title: "Associate Software Engineer → Software Engineer" , 
         workplace: "ServiceNow",
         description: "Built multiple features for Virtual Agent Chatbot and Workflow/Flow Designer Team",
         date: "June 2020 - October 2022",
@@ -45,7 +45,7 @@ let timelineElements = [
     }, 
     {
         id: 6,  
-        title: "High School Student", 
+        title: "Student", 
         workplace: "Novi High School",
         description: "IB Diploma Recipient",
         date: "Sept 2012 - June 2016",
