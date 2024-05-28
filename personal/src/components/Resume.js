@@ -24,6 +24,7 @@ export const Resume = () => {
 
         let showButton = element.button !== undefined && element.button !== null && element.button !== ""; 
 
+
         const theme = createTheme({
             palette: {
               tagColors: {

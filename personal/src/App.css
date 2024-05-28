@@ -73,6 +73,7 @@ span.navbar-text {
     display: flex;
     align-items: center;
 }
+
 .social-icon {
     display: inline-block;
     margin-left: 14px;
@@ -115,7 +116,7 @@ span.navbar-text {
   color: #282c34;
   border: 1px solid #282c34;
   padding: 18px 34px;
-  font-size: 18px;
+  font-size: px;
   margin-left: 18px;
 	position: relative;
 	background-color: transparent;
@@ -231,10 +232,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /*Resume*/ 
 
+.vertical-timeline::before {
+  background-color: #362706  !important; /* Set the line color to black */
+}
+
 /* timeline.module.css */
 .timeline-container {
   width: 80% !important; /* Adjust the width as needed */
   padding: 20px !important;
+  
 }
 
 .timeline-element {
@@ -321,11 +327,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .timeline-icon {
   top: 0;
-  background-color: #fff; /* Adjust background color as needed */
+  background-color: #637E76; /* Adjust background color as needed */
   width: 40px; /* Adjust width and height as needed */
   height: 40px;
+  box-shadow: none !important;  
 }
 
+ 
 .timeline-icon img {
   max-width: 100%; /* Ensure the icon fits within its container */
 }
