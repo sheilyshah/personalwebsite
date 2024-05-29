@@ -239,7 +239,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* timeline.module.css */
 .timeline-container {
-  width: 80% !important; /* Adjust the width as needed */
+  width: 86% !important; /* Adjust the width as needed */
   padding: 20px !important;
   
 }
