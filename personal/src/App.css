@@ -197,7 +197,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: left;
   align-items: center;
   display: flex;
-  height: 70vh;
+  height: 65vh;
   background-color: #f5f5f5; /* Optional: Add background color */
   margin-bottom: 150px; /* Adjust as needed */
 }
@@ -234,6 +234,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .vertical-timeline::before {
   background-color: #362706  !important; /* Set the line color to black */
+  
 }
 
 /* timeline.module.css */
@@ -260,9 +261,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 30px; 
   color: #201209; 
   font-family: OpenSans-SemiBold;
-  margin-bottom: 35px; 
+  margin-bottom: 25px; 
   display: inline-block;
-  width: 82% !important; /* Adjust the width as needed */
+  width: 86% !important; /* Adjust the width as needed */
   text-align: left;
 }
 
@@ -340,10 +341,37 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .timeline-content {
   padding-left: 60px; /* Adjust padding to accommodate the icon */
+} 
+
+/*Writings*/ 
+
+.writing {
+  padding: 80px 0;
+  position: relative;
+}
+.writing h1 {
+  font-size: 30px; 
+  color: #201209; 
+  font-family: OpenSans-SemiBold;
+  margin-bottom: 35px; 
+  display: inline-block;
+  width: 86% !important; /* Adjust the width as needed */
+  text-align: left;
+}
+
+.blog-box-container {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.blog-box-container-text h4{
+  font-size: 18px;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
 
 .App {
-  text-align: center;
+  text-align: center; 
 }
 
 .App-logo {
