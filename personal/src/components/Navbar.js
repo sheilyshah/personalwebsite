@@ -45,16 +45,12 @@ export const NavBar = () => {
             <Nav.Link href="home" className={activeLink === 'home' ? 'active-navbar' : 'navbar'} onClick={() =>  handleNavLinkClick('home')}>home</Nav.Link>
             <Nav.Link href="resume" className={activeLink === 'resume' ? 'active-navbar' : 'navbar'} onClick={() =>  handleNavLinkClick('resume')}>resume</Nav.Link>
             <Nav.Link href="writing" className={activeLink === 'writing' ? 'active-navbar' : 'navbar'} onClick={() =>  handleNavLinkClick('writing')}>writing</Nav.Link>
-            <Nav.Link href="dance" className={activeLink === 'dance' ? 'active-navbar' : 'navbar'} onClick={() =>  handleNavLinkClick('dance')}>dance</Nav.Link>
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
                 <SocialIcon network="linkedin" url="https://www.linkedin.com/in/sheilyshah/" />
                 <SocialIcon network="instagram" url="https://www.instagram.com/sheils26/" />
             </div>
-            <button className="form" onClick={() => console.log('connect')}>
-                <span>Let's Connect</span>
-            </button>
           </span>
         </Navbar.Collapse>
       </Container>

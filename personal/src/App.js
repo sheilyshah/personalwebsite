@@ -15,7 +15,7 @@ function App() {
     
       const targetPosition = targetElement.getBoundingClientRect().top;
       const startPosition = window.pageYOffset;
-      let startTime = null;
+      let startTime = null; 
     
       const animation = (currentTime) => {
         if (startTime === null) startTime = currentTime;

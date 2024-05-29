@@ -261,10 +261,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 30px; 
   color: #201209; 
   font-family: OpenSans-SemiBold;
-  margin-bottom: 25px; 
+  margin-bottom: 1px; 
   display: inline-block;
   width: 86% !important; /* Adjust the width as needed */
   text-align: left;
+}
+
+.timeline .wrap {
+  font-size: 20px; 
+  color: #201209; 
+  font-family: OpenSans-Light;
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 25px; 
+  width: 86% !important; /* Adjust the width as needed */
 }
 
 .timeline-badge {
@@ -346,7 +356,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /*Writings*/ 
 
 .writing {
-  padding: 80px 0;
+  padding: 50px 0;
   position: relative;
 }
 .writing h1 {
@@ -369,6 +379,87 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
 }
+
+
+/* .dance h1 {
+  font-size: 30px; 
+  color: #201209; 
+  font-family: OpenSans-SemiBold;
+  margin-bottom: 10px; 
+  display: inline-block;
+  width: 86% !important; 
+  text-align: left;
+}
+
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  padding-top: 20px;
+}
+
+.card {
+  width: 350px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: relative;
+  margin: 10px;
+  flex-direction: column
+}
+
+.card.hovered {
+  transform: scale(1.05);
+}
+
+.card-image {
+  background-size: cover;
+  background-position: center;
+  height: 200px; 
+  border-radius: 12px;
+  max-height: 300px; 
+  width: 100%; 
+  object-fit: cover;
+}
+
+.textbox {
+  padding: 16px;
+  flex-grow: 1;
+}
+
+.card-button {
+  background-color: #201209;
+  color: white;
+  border: 1px solid #121212;
+  padding: 0.5em 1em;
+  text-align: left;
+  text-decoration: none;
+  font-size: 12px;
+  margin: 8px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  width: auto;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
+}
+
+.card-button:hover {
+  background-color: white;
+  color: #121212;
+  border-color: #121212;
+}
+
+
+.textbox h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #333;
+  font-family: OpenSans-Regular;
+} */
 
 .App {
   text-align: center; 
