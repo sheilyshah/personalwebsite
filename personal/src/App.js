@@ -49,7 +49,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App" >
       <NavBar />
       <Banner id="home"/>
       <Resume id="resume"/>
