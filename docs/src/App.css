@@ -1,0 +1,530 @@
+
+/* Fonts */
+
+@font-face {
+  font-family: OpenSans-Light;
+  src: url('./assets/fonts/OpenSans-Light.ttf');
+}
+
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url('./assets/fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: OpenSans-SemiBold;
+  src: url('./assets/fonts/OpenSans-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: OpenSans-Italic;
+  src: url('./assets/fonts/OpenSans-Italic.ttf');
+}
+
+/*Default CSS */
+* {
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+html { 
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px; 
+}
+
+body { 
+  font-weight: 400; 
+  overflow-x: hidden; 
+  position: relative;
+  background-color: whitesmoke !important;
+  color:#121212 !important;
+  font-family: 'OpenSans', sans-serif !important 
+  
+}
+
+/************ Navbar Css ************/
+nav.navbar {
+  padding: 18px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  transition:  0.32s ease-in-out;
+}
+nav.navbar.scrolled {
+  padding: 0px 0;
+  background-color:whitesmoke;
+}
+
+.nav-link {
+  font-weight: 400;
+  color: #121212 !important;
+  letter-spacing: 0.8px;
+  padding: 25px;
+  font-size: 35px;
+  opacity: 0.75;
+}
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
+nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+    opacity: 1;
+}
+span.navbar-text {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-left: 14px;
+}
+.social-icon a {
+    width: 42px;
+    height: 42px;
+    background: whitesmoke;
+    display: inline-flex;
+    border-radius: 50%;
+    margin-right: 6px;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border: 1px solid #282c34;
+}
+.social-icon a::before {
+    content: "";
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transform: scale(0);
+	transition: 0.3s ease-in-out;
+}
+.social-icon a:hover::before {
+    transform: scale(1);
+}
+.social-icon a img {
+	width: 40%;
+	z-index: 1;
+	transition: 0.3s ease-in-out;
+}
+.social-icon a:hover img {
+	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+.navbar-text button {
+  font-weight: 700;
+  color: #282c34;
+  border: 1px solid #282c34;
+  padding: 18px 34px;
+  font-size: px;
+  margin-left: 18px;
+	position: relative;
+	background-color: transparent;
+	transition: 0.3s ease-in-out;
+}
+.navbar-text button span {
+  z-index: 1;
+}
+.navbar-text button::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+.navbar-text button:hover {
+  color:#121212;
+}
+.navbar-text button:hover::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+nav.navbar .navbar-toggler:active,
+nav.navbar .navbar-toggler:focus {
+	outline: none;
+    box-shadow: none;
+}
+nav.navbar .navbar-toggler-icon {
+  width: 24px;
+  height: 17px;
+  background-image: none;
+  position: relative;
+  border-bottom: 2px solid #282c34;
+  transition: all 300ms linear;
+  top: -2px;
+}
+nav.navbar .navbar-toggler-icon:focus {
+	border-bottom: 2px solid #282c34;
+}
+nav.navbar .navbar-toggler-icon:after,
+nav.navbar .navbar-toggler-icon:before {
+	width: 24px;
+	position: absolute;
+	height: 2px;
+	background-color: #282c34;
+	top: 0;
+	left: 0;
+	content: '';
+	z-index: 2;
+	transition: all 300ms linear;
+}
+nav.navbar .navbar-toggler-icon:after {
+	top: 8px;
+}
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+	transform: rotate(45deg);
+	background-color: #282c34;
+	height: 2px;
+}
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+	transform: translateY(8px) rotate(-45deg);
+	background-color: #f8f9fa;
+	height: 2px;
+}
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+	border-color: transparent;
+}
+
+/*Banner Style */
+.banner {
+  background: #f5f5f5;
+  text-align: left;
+  align-items: center;
+  height: 65vh;
+  background-color: #f5f5f5; /* Optional: Add background color */
+  margin-bottom: 150px; /* Adjust as needed */
+}
+
+.banner .content {
+  margin-top: 70px;
+  padding: 100px; 
+  width: 100%;
+  height: 100%;
+}
+
+.banner .image-container img {
+  padding-top: 150px;
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  display: flex;
+}
+
+.banner h1 {
+  font-size: 70px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 10px;
+  display:block;
+  color: #201209; 
+}
+
+.banner .wrap {
+  font-size: 30px; 
+  color: #201209; 
+  font-family: OpenSans-Light;
+}
+
+/*Resume*/ 
+
+.vertical-timeline::before {
+  background-color: #362706  !important; /* Set the line color to black */
+  
+}
+
+/* timeline.module.css */
+.timeline-container {
+  width: 86% !important; /* Adjust the width as needed */
+  padding: 20px !important;
+  
+}
+
+.timeline-element {
+  font-size: 14px !important; /* Keep font size */
+  border-radius: 25px !important;
+  text-align: left;
+}
+
+.timeline-skills {
+  display: inline-block;
+  width: 90% !important; /* Adjust the width as needed */
+  text-align: center;
+  margin-bottom: 35px; 
+}
+
+.timeline-title {
+  font-size: 30px; 
+  color: #201209; 
+  font-family: OpenSans-SemiBold;
+  margin-bottom: 1px; 
+  display: inline-block;
+  width: 86% !important; /* Adjust the width as needed */
+  text-align: left;
+}
+
+.timeline .wrap {
+  font-size: 20px; 
+  color: #201209; 
+  font-family: OpenSans-Light;
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 25px; 
+  width: 86% !important; /* Adjust the width as needed */
+}
+
+.timeline-badge {
+  margin-bottom: 10px;
+  text-align: left;
+  display: inline-block;
+}
+
+.timeline-element h3,
+.timeline-element h4,
+.timeline-element h5,
+.timeline-element p {
+  margin: 0 !important; /* Remove default margin */
+  padding-left: 10px; /* Add padding to the left */
+  font-family: OpenSans-Regular !important; /* Keep font family */
+  display: inline-block;
+  text-align: left;
+}
+
+.timeline-element h3 {
+  font-size: 16px !important; /* Increase font size */
+  font-family: OpenSans-SemiBold !important; /* Keep font family */
+}
+
+.timeline-element h4,
+.timeline-element h5 {
+  font-size: 16px !important; /* Keep font size */
+  font-family: OpenSans-Regular !important; /* Keep font family */
+}
+
+.timeline-element h5 {
+  font-size: 15px !important; /* Keep font size */
+  font-family: OpenSans-Light !important; /* Keep font family */
+}
+
+.timeline-element p {
+  font-size: 14px !important; /* Keep font size */
+}
+
+.timeline-element-button {
+  background-color: #201209;
+  color: white;
+  border: 1px solid #121212; /* Added border style */
+  padding: 0.5em 1em;
+  text-align: left;
+  text-decoration: none;
+  font-size: 12px;
+  margin: 8px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  width: auto;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Transition for background, text, and border */
+}
+
+.timeline-element-button:hover {
+  background-color: white;
+  color: #121212;
+  border-color: #121212; /* Change border color on hover */
+}
+
+.timeline-icon {
+  top: 0;
+  background-color: #637E76; /* Adjust background color as needed */
+  width: 40px; /* Adjust width and height as needed */
+  height: 40px;
+  box-shadow: none !important;  
+}
+
+ 
+.timeline-icon img {
+  max-width: 100%; /* Ensure the icon fits within its container */
+}
+
+.timeline-content {
+  padding-left: 60px; /* Adjust padding to accommodate the icon */
+} 
+
+/*Writings*/ 
+
+.writing {
+  padding: 50px 0;
+  position: relative;
+}
+.writing h1 {
+  font-size: 30px; 
+  color: #201209; 
+  font-family: OpenSans-SemiBold;
+  margin-bottom: 35px; 
+  display: inline-block;
+  width: 86% !important; /* Adjust the width as needed */
+  text-align: left;
+}
+
+.blog-box-container {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.blog-box-container-text h4{
+  font-size: 18px;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+
+/* .dance h1 {
+  font-size: 30px; 
+  color: #201209; 
+  font-family: OpenSans-SemiBold;
+  margin-bottom: 10px; 
+  display: inline-block;
+  width: 86% !important; 
+  text-align: left;
+}
+
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  padding-top: 20px;
+}
+
+.card {
+  width: 350px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: relative;
+  margin: 10px;
+  flex-direction: column
+}
+
+.card.hovered {
+  transform: scale(1.05);
+}
+
+.card-image {
+  background-size: cover;
+  background-position: center;
+  height: 200px; 
+  border-radius: 12px;
+  max-height: 300px; 
+  width: 100%; 
+  object-fit: cover;
+}
+
+.textbox {
+  padding: 16px;
+  flex-grow: 1;
+}
+
+.card-button {
+  background-color: #201209;
+  color: white;
+  border: 1px solid #121212;
+  padding: 0.5em 1em;
+  text-align: left;
+  text-decoration: none;
+  font-size: 12px;
+  margin: 8px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  width: auto;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
+}
+
+.card-button:hover {
+  background-color: white;
+  color: #121212;
+  border-color: #121212;
+}
+
+
+.textbox h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #333;
+  font-family: OpenSans-Regular;
+} */
+
+/* Footer.css */
+.footer {
+  background-color: whitesmoke;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-text {
+  margin: 0;
+  padding: 0 10px;
+  font-size: 14px;
+  font-family: OpenSans-Regular;
+}
+
+.footer-link {
+  color: #000;
+  text-decoration: none;
+}
+
+.App {
+  text-align: center; 
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: whitesmoke;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
