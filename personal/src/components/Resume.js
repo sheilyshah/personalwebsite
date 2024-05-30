@@ -15,7 +15,7 @@ export const Resume = () => {
 <Container>  
 <section className="timeline" id="resume"> 
 <h1 className="timeline-title"> {'resume'} </h1>
-<span className="wrap">if you're interested in the technical nitty-gritty, drop me a note at <a href="mailto:sheilyhshah@gmail.com">sheilyhshah@gmail.com</a> for my official resume.</span>
+<span className="wrap">if you're interested in the technical nitty-gritty, drop me a note at <a href="sheilyhshah@gmail.com">sheilyhshah@gmail.com</a> for my official resume.</span>
 <section className="timeline-skills">
     <Skills />
 </section>
