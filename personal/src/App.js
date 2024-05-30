@@ -5,6 +5,7 @@ import { NavBar } from './components/Navbar';
 import { Banner } from './components/Banner';
 import { Resume } from './components/Resume';
 import { Writing } from './components/Writing';
+import { Footer } from './components/Footer';
 
 function App() {
   useEffect(() => {
@@ -53,6 +54,7 @@ function App() {
       <Banner id="home"/>
       <Resume id="resume"/>
       <Writing id="writing" />
+      <Footer/>
     </div>
   );
 }
