@@ -7,15 +7,34 @@ import { SocialIcon } from 'react-social-icons'
 export const NavBar = () => { 
     const [activeLink, setActiveLink] = useState('home')
     const [scrolled,  setScrolled] = useState(false) 
-    
+  
+    useEffect(() => {
+      const onScroll = () => {
+        if (window.scrollY > 50) {
+          setScrolled(true);
+        } else {
+          setScrolled(false);
+        }
+      };
+  
+      window.addEventListener("scroll", onScroll);
+  
+      return () => window.removeEventListener("scroll", onScroll);
+    }, []);
+  
     const handleNavLinkClick = (id) => {
       const element = document.getElementById(id);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
-        window.history.pushState({}, '', `#${id}`);
+        window.history.pushState({}, '', `${id}`);
       }
+      onUpdateActiveLink(id);
     };
-      
+  
+    const onUpdateActiveLink = (value) => {
+      setActiveLink(value);
+    };
+  
     return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
